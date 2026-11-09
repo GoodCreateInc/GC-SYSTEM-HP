@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="640" viewBox="0 0 1920 640">
+  <defs>
+    <radialGradient id="halo">
+      <stop stop-color="#b7faff" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#59e0ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g opacity="0">
+    <circle r="14" fill="url(#halo)"/>
+    <circle r="3.7" fill="#e1fcff"/>
+    <!-- Each cycle has 4.8 seconds of movement and 2.4 seconds of rest. -->
+    <animate attributeName="opacity" begin=".1s" dur="7.2s" repeatCount="indefinite"
+      values="0;.9;.9;0;0" keyTimes="0;.08;.586667;.666667;1"/>
+    <animateMotion begin=".1s" dur="7.2s" repeatCount="indefinite"
+      calcMode="linear" keyPoints="0;1;1" keyTimes="0;.666667;1"
+      path="M1124 365 C1200 291 1400 179 1569 114 C1677 73 1742 60 1756 89 C1770 117 1720 175 1664 217 C1587 279 1489 342 1375 394 C1262 446 1144 489 1106 442 C1087 419 1099 394 1124 365 Z"/>
+  </g>
+</svg>

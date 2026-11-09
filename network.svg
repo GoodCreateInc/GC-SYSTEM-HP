@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 500" fill="none">
+  <defs>
+    <radialGradient id="halo">
+      <stop stop-color="#64d7fa" stop-opacity=".38"/>
+      <stop offset=".65" stop-color="#a69de9" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#a69de9" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sphere" cx=".4" cy=".33" r=".72">
+      <stop stop-color="#81d2ec" stop-opacity=".67"/>
+      <stop offset=".65" stop-color="#497fb0" stop-opacity=".76"/>
+      <stop offset="1" stop-color="#494a8a" stop-opacity=".9"/>
+    </radialGradient>
+    <linearGradient id="signal" x1="0" y1="1" x2="1" y2="0">
+      <stop stop-color="#c7a2ee"/>
+      <stop offset=".5" stop-color="#adc9ff"/>
+      <stop offset="1" stop-color="#7ff0f4"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r=".8" fill="#c1d7ed" opacity=".36"/>
+    </pattern>
+  </defs>
+  <ellipse cx="300" cy="250" rx="280" ry="249" fill="url(#halo)"/>
+  <path d="M44 42h506v412H44z" fill="url(#dots)"/>
+  <g stroke="#b0c8de" opacity=".55">
+    <path d="M30 67V30h37m446 0h37v37M30 433v37h37m446 0h37v-37"/>
+    <path d="M30 166h74l39 39m407 82h-61l-50-38M30 373h91l54-56M550 118h-76l-40 40"/>
+    <path d="M290 30v440M45 250h490" stroke-dasharray="3 8"/>
+  </g>
+  <g fill="#c0ddf0">
+    <circle cx="30" cy="166" r="3"/><circle cx="550" cy="287" r="3"/>
+    <circle cx="30" cy="373" r="3"/><circle cx="550" cy="118" r="3"/>
+  </g>
+  <circle cx="290" cy="250" r="197" stroke="#acc5df" opacity=".25"/>
+  <circle cx="290" cy="250" r="182" stroke="#bbd1e8" opacity=".6" stroke-dasharray="1 8"/>
+  <circle cx="290" cy="250" r="151" fill="url(#sphere)" stroke="url(#signal)" stroke-width="1.5"/>
+  <g stroke="#e1edf9" opacity=".37">
+    <ellipse cx="290" cy="250" rx="112" ry="151"/>
+    <ellipse cx="290" cy="250" rx="58" ry="151"/>
+    <path d="M290 99v302M139 250h302"/>
+    <ellipse cx="290" cy="250" rx="151" ry="58"/>
+    <ellipse cx="290" cy="250" rx="151" ry="111"/>
+  </g>
+  <g stroke="url(#signal)" stroke-linejoin="round">
+    <path d="m185 211 69-56 90 33 51 72-60 75-103 10-55-63z" opacity=".65"/>
+    <path d="m185 211 89 34 70-57m51 72-121-15-42 100m42-100 61 90" opacity=".55"/>
+    <ellipse cx="290" cy="250" rx="236" ry="72" transform="rotate(-27 290 250)" opacity=".7"/>
+    <path d="M91 362a236 72-27 0 0 259-48" stroke-width="2" filter="url(#glow)"/>
+    <path d="M420 126a236 72-27 0 1 83 9" stroke-width="2" filter="url(#glow)"/>
+  </g>
+  <g fill="#b8dced" stroke="#e0edf9" stroke-width="1.5">
+    <circle cx="185" cy="211" r="3"/><circle cx="254" cy="155" r="3"/>
+    <circle cx="344" cy="188" r="3"/><circle cx="395" cy="260" r="3"/>
+    <circle cx="335" cy="335" r="3"/><circle cx="232" cy="345" r="3"/>
+    <circle cx="274" cy="245" r="5"/><circle cx="503" cy="135" r="4"/>
+  </g>
+  <circle cx="274" cy="245" r="12" stroke="#d9e9f6" opacity=".55"/>
+  <g fill="#ccdeed" font-family="monospace" font-size="10" letter-spacing="2">
+    <text x="46" y="54">GC / NETWORK</text>
+    <text x="532" y="449" text-anchor="end">FIG. 01</text>
+  </g>
+</svg>
